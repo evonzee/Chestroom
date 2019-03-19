@@ -37,7 +37,7 @@ namespace ChestroomPlugin
 			}, "crdump"));
 
 
-			if (File.Exists(Path.Combine(Environment.CurrentDirectory, "Serverplugins", "InfChests.dll")))
+			if (File.Exists(Path.Combine(Environment.CurrentDirectory, "Serverplugins", "InfiniteChestsV3.dll")))
 				usinginfchests = true;
 
 			ReadConfig();
