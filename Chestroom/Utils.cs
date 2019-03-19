@@ -1,4 +1,4 @@
-﻿using InfChests;
+﻿using InfiniteChestsV3;
 using Terraria;
 using TShockAPI;
 
@@ -15,14 +15,10 @@ namespace ChestroomPlugin
 				if (c == null)
 					continue;
 
-				DB.addChest(new InfChest()
+				DB.AddChest(new InfChest(_userid: -1, _x: c.x, _y: c.y, _worldid: Main.worldID)
 				{
 					items = c.item,
 					isPublic = true,
-					refillTime = 0,
-					userid = -1,
-					x = c.x,
-					y = c.y,
 				});
 			}
 		}
